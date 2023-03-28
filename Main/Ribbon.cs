@@ -29,10 +29,13 @@ namespace Main
 
         public override void OnConnection(object Application, ext_ConnectMode ConnectMode, object AddInInst, ref Array custom)
         {
-            var xlApp = Application as Microsoft.Office.Interop.Excel.Application;
+            Debug.Print("Main Ribbon OnConnection - Enter");
 
+            var xlApp = Application as Microsoft.Office.Interop.Excel.Application;
             var addInDir = Path.GetDirectoryName(ExcelDnaUtil.XllPath);
             xlApp.RegisterXLL(Path.Combine(addInDir, "Child1-AddIn64.xll"));
+
+            Debug.Print("Main Ribbon OnConnection - Exit");
         }
 
         public override void OnStartupComplete(ref Array custom)

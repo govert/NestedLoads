@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", "{274FBF31-0AA2-4FAE-B356-4F5BE8ED9706}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Main", "Main\Main.csproj", "{274FBF31-0AA2-4FAE-B356-4F5BE8ED9706}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9478E67E-DBCF-406A-83C5-1A3D09E8CA2D} = {9478E67E-DBCF-406A-83C5-1A3D09E8CA2D}
+		{C27E9932-41AA-4DBF-8536-5B80900001EF} = {C27E9932-41AA-4DBF-8536-5B80900001EF}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Child1", "Child1\Child1.csproj", "{9478E67E-DBCF-406A-83C5-1A3D09E8CA2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Child1", "Child1\Child1.csproj", "{9478E67E-DBCF-406A-83C5-1A3D09E8CA2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Child2", "Child2\Child2.csproj", "{C27E9932-41AA-4DBF-8536-5B80900001EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Child2", "Child2\Child2.csproj", "{C27E9932-41AA-4DBF-8536-5B80900001EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

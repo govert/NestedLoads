@@ -8,11 +8,13 @@ namespace Child1
     {
         public void AutoOpen()
         {
-            Debug.Print("Child1 AutoOpen");
-            var xlApp = ExcelDnaUtil.Application as Microsoft.Office.Interop.Excel.Application;
+            Debug.Print("Child1 AutoOpen - Enter");
 
+            var xlApp = ExcelDnaUtil.Application as Microsoft.Office.Interop.Excel.Application;
             var addInDir = Path.GetDirectoryName(ExcelDnaUtil.XllPath);
             xlApp.RegisterXLL(Path.Combine(addInDir, "Child2-AddIn64.xll"));
+
+            Debug.Print("Child1 AutoOpen - Exit");
         }
 
         public void AutoClose()

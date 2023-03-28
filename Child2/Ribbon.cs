@@ -29,8 +29,9 @@ namespace Main
 
         public override void OnConnection(object Application, ext_ConnectMode ConnectMode, object AddInInst, ref Array custom)
         {
+            Debug.Print("Child2 Ribbon OnConnection - Enter");
         }
-        
+
         public override void OnStartupComplete(ref Array custom)
         {
             base.OnStartupComplete(ref custom);
